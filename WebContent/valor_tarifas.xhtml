@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<title>Pagina incial</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="stylesheet" href="bootstrap/3.1.1/css/customizado.css"/>
+</h:head>
+
+<h:body>
+
+<!-- INCLUDE DO MENU -->
+<h:form>
+	<ui:include src="/menu.xhtml" />
+</h:form>
+
+
+
+<h:form id="form_get" prependId="false">
+
+	<p:spacer height="10px"/>
+
+	<div align="center" >
+	
+
+		<div style="width: 600px">
+		    <p:dataTable var="lista" value="#{tarifaController.listaTarifa}">
+		        <p:column headerText="Origem">
+		            <h:outputText value="#{lista.origemStr}" />
+		        </p:column>
+		 
+		        <p:column headerText="Destino">
+		            <h:outputText value="#{lista.destinoStr}" />
+		        </p:column>
+		 
+		        <p:column headerText="$/min">
+		            <h:outputText value="#{lista.minutoStr}" />
+		        </p:column>
+		    </p:dataTable>		
+		</div>
+
+	
+	
+	</div>
+
+</h:form>
+
+</h:body>
+</html>
