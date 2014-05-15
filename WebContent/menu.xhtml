@@ -18,27 +18,32 @@
  <h:form>
 
 
+	<!-- BANNER AZUL E LOGO -->
+	<div style="width 800px; height: 101px; background-image: url('./imagens/banner_fundo.png'); background-repeat: repeat-x;">
+		<p:graphicImage value="/imagens/logo_portal_certificacao.png"/>
+	</div>
+	
+	<br/>			
+                             
+    <p:menubar autoDisplay="false" style="background: #bbcbaa; font-size: 14px;">
+    	<p:menuitem rendered="true" disabled="false" value="Home" url="/index.jsf" ajax="false" />
+    	
+    	<p:submenu rendered="true" label="Tarifas" icon="ui-icon ui-icon-extlink">
+    		<p:submenu rendered="true" label="Planos" style="width: 100%">
+	            	<p:menuitem value="Valor Tarifas" url="/valor_tarifas.jsf" />
+	                <p:menuitem value="Planos Tarifas" url="#" />   			
+    		</p:submenu>
+    		
+    		<p:submenu rendered="false" label="Projetos" style="width: 100%">
+				<p:menuitem value="Undo" url="#" icon="ui-icon-arrowreturnthick-1-w" />
+				<p:menuitem value="Redo" url="#" icon="ui-icon-arrowreturnthick-1-e" />
+    			<p:separator />
+    			<p:menuitem value="Redo" url="#" icon="ui-icon-arrowreturnthick-1-e" />  			
+    		</p:submenu>
+    	</p:submenu>
+	</p:menubar>
 
-    <p:menubar>
-
-        <p:menuitem value="Home" url="/index.jsf" />
-
-        <p:submenu label="Tarifas" icon="ui-icon-document">
-            <p:submenu label="visualizar" icon="ui-icon-contact">
-            	<p:menuitem value="Valor Tarifas" url="/valor_tarifas.jsf" />
-                <p:menuitem value="Planos Tarifas" url="#" />
-            </p:submenu>
-            <p:menuitem value="Open" url="#" />
-            <p:separator />
-            <p:menuitem value="Quit" url="#" />
-        </p:submenu>
- 
-        <p:submenu label="Edit" icon="ui-icon-pencil">
-            <p:menuitem value="Undo" url="#" icon="ui-icon-arrowreturnthick-1-w" />
-            <p:menuitem value="Redo" url="#" icon="ui-icon-arrowreturnthick-1-e" />
-        </p:submenu>
-
-    </p:menubar>
+    
 </h:form>
 
 </h:body>
