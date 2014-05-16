@@ -9,7 +9,7 @@ import br.com.telzir.model.Tarifa;
 
 public class TarifaDAO {
 
-	//Construtor
+	//Conutor
 	public TarifaDAO(){
 		
 		
@@ -32,29 +32,29 @@ public class TarifaDAO {
 			Tarifa tarifa5 = new Tarifa();
 			Tarifa tarifa6 = new Tarifa();
 			
-			tarifa1.setOrigemStr("011");
-			tarifa1.setDestinoStr("016");
-			tarifa1.setMinutoStr("1.90");
+			tarifa1.setOrigem("011");
+			tarifa1.setDestino("016");
+			tarifa1.setValorMinuto("1.90");
 		
-			tarifa2.setOrigemStr("016");
-			tarifa2.setDestinoStr("011");
-			tarifa2.setMinutoStr("2.90");
+			tarifa2.setOrigem("016");
+			tarifa2.setDestino("011");
+			tarifa2.setValorMinuto("2.90");
 	
-			tarifa3.setOrigemStr("011");
-			tarifa3.setDestinoStr("017");
-			tarifa3.setMinutoStr("1.70");
+			tarifa3.setOrigem("011");
+			tarifa3.setDestino("017");
+			tarifa3.setValorMinuto("1.70");
 	
-			tarifa4.setOrigemStr("017");
-			tarifa4.setDestinoStr("011");
-			tarifa4.setMinutoStr("2.70");
+			tarifa4.setOrigem("017");
+			tarifa4.setDestino("011");
+			tarifa4.setValorMinuto("2.70");
 	
-			tarifa5.setOrigemStr("011");
-			tarifa5.setDestinoStr("018");
-			tarifa5.setMinutoStr("0.90");
+			tarifa5.setOrigem("011");
+			tarifa5.setDestino("018");
+			tarifa5.setValorMinuto("0.90");
 			
-			tarifa6.setOrigemStr("018");
-			tarifa6.setDestinoStr("011");
-			tarifa6.setMinutoStr("1.90");
+			tarifa6.setOrigem("018");
+			tarifa6.setDestino("011");
+			tarifa6.setValorMinuto("1.90");
 			
 			
 			listaTarifa.add(tarifa1);
@@ -71,6 +71,8 @@ public class TarifaDAO {
 		return listaTarifa;
 		
 	}
+	
+	
 	
 	
 	

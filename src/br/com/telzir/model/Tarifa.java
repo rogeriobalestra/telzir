@@ -1,34 +1,53 @@
 package br.com.telzir.model;
 
-
 public class Tarifa {
 
-	private String origemStr;
-	private String destinoStr;
-	private String minutoStr;
+	private String origem;
+	private String destino;
+	private String valorMinuto;
+	private String planoEscolhido;
+	private String minutoUtilizadoLigacao;
 
-	public String getOrigemStr() {
-		return origemStr;
+	public String getOrigem() {
+		return origem;
 	}
 
-	public void setOrigemStr(String origemStr) {
-		this.origemStr = origemStr;
+	public void setOrigem(String origem) {
+		this.origem = origem;
 	}
 
-	public String getDestinoStr() {
-		return destinoStr;
+	public String getDestino() {
+		return destino;
 	}
 
-	public void setDestinoStr(String destinoStr) {
-		this.destinoStr = destinoStr;
+	public void setDestino(String destino) {
+		this.destino = destino;
 	}
 
-	public String getMinutoStr() {
-		return minutoStr;
+	public String getValorMinuto() {
+		return valorMinuto;
 	}
 
-	public void setMinutoStr(String minutoStr) {
-		this.minutoStr = minutoStr;
+	public void setValorMinuto(String valorMinuto) {
+		this.valorMinuto = valorMinuto;
 	}
 
+	public String getPlanoEscolhido() {
+		return planoEscolhido;
+	}
+
+	public void setPlanoEscolhido(String planoEscolhido) {
+		this.planoEscolhido = planoEscolhido;
+	}
+
+	public String getMinutoUtilizadoLigacao() {
+		return minutoUtilizadoLigacao;
+	}
+
+	public void setMinutoUtilizadoLigacao(String minutoUtilizadoLigacao) {
+		this.minutoUtilizadoLigacao = minutoUtilizadoLigacao;
+	}
+
+
+	
 }

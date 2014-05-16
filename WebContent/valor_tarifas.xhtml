@@ -29,18 +29,22 @@
 	<div align="center" >
 	
 
-		<div style="width: 600px">
+		<div style="width: 600px; text-align: center;">
 		    <p:dataTable var="lista" value="#{tarifaController.listaTarifa}">
+		    	 <f:facet name="header">
+            			Tarifa fixa por minuto
+        		</f:facet>
+		    
 		        <p:column headerText="Origem">
-		            <h:outputText value="#{lista.origemStr}" />
+		            <h:outputText value="#{lista.origem}" />
 		        </p:column>
 		 
 		        <p:column headerText="Destino">
-		            <h:outputText value="#{lista.destinoStr}" />
+		            <h:outputText value="#{lista.destino}" />
 		        </p:column>
 		 
 		        <p:column headerText="$/min">
-		            <h:outputText value="#{lista.minutoStr}" />
+		            <h:outputText value="#{lista.valorMinuto}" />
 		        </p:column>
 		    </p:dataTable>		
 		</div>
