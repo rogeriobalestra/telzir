@@ -41,10 +41,10 @@
 				</p:selectOneMenu>
 			
 				<h:outputText value="DDD Origem: (ex:011) " />
-				<p:inputText value="#{planoController.tarifa.origem}" style="width: 50px;" />
+				<p:inputMask mask="999" value="#{planoController.tarifa.origem}" style="width: 50px;" />
 			
 				<h:outputText value="DDD Destino: (ex:018) " />
-				<p:inputText value="#{planoController.tarifa.destino}" style="width: 50px;" />			
+				<p:inputMask mask="999" value="#{planoController.tarifa.destino}" style="width: 50px;" />			
 			
 				<h:outputText value="Tempo da ligação em minutos: " />
 				<p:inputText value="#{planoController.tarifa.minutoUtilizadoLigacao}" style="width: 150px;" />
@@ -65,7 +65,7 @@
 		
 		
 		<!-- PANEL RESULTADOS -->
-		<p:panel style="width: 600px; background: #ADFF9F">
+		<p:panel style="width: 600px; background: #BFC1FF">
 
 			<h:panelGrid columns="2" >
 
