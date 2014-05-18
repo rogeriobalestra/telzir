@@ -7,3 +7,28 @@
 		-moz-border-radius: 150px;
 		background: url(http://link-to-your/image.jpg) no-repeat;
 	}
+	
+	.textoDestaque1 {
+		font-family: Arial, verdana;
+		font-size: 14px;
+		font-weight: bold;
+		color: #2A2230;
+	
+	}
+	
+	
+	.textoDestaque2 {
+		font-family: Arial, verdana;
+		font-size: 16px;
+		font-weight: bold;
+		color: #2A2230;
+	
+	}
+	
+	.textoDestaque3 {
+		font-family: Arial, verdana;
+		font-size: 16px;
+		font-weight: bold;
+		color: #E34C4C;
+	
+	}
