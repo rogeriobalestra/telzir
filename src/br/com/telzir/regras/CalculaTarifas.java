@@ -65,6 +65,7 @@ public class CalculaTarifas {
 		double percentual = (valor * 10) / 100;
 		return valor + percentual;
 	}
+
 	
 	
 	

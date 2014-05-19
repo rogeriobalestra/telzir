@@ -68,6 +68,7 @@ public class TarifaDAO {
 			e.printStackTrace();
 		} 
 		
+		
 		return listaTarifa;
 		
 	}
