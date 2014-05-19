@@ -31,6 +31,7 @@
 
 		<p:panel style="background: #F7F7F7;">
 		
+			<!-- COMBO - FALEMAIS -->
 			<h:panelGrid columns="2" style="padding: 10px;">
 				<h:outputText value="Escolha seu Plano: " />
 				<p:selectOneMenu value="#{planoController.tarifa.planoEscolhido}" style="width: 160px;">
@@ -56,8 +57,8 @@
 				<p:commandButton value="Calcular" actionListener="#{planoController.calculaLigacao}" onclick="PF('dlg2').show();" />	
 			</p:panel>		
 		
-		
 		</p:panel>
+
 
 	
 		<p:spacer height="10px;"/>
@@ -78,11 +79,9 @@
 				<h:outputText value="Tarifa Aplicada: $" styleClass="textoDestaque1"/>
 				<h:outputText value="#{planoController.tarifaAplicada}" styleClass="textoDestaque3" />
 
-
 			</h:panelGrid>
 		
-		
-		</p:panel>
+		</p:panel><!-- FIM PAINEL RESULTADOS -->
 	
 
 	
