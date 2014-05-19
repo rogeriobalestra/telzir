@@ -15,6 +15,7 @@ public class CalculaTarifasTest {
 		assertEquals("1.7", String.valueOf(new CalculaTarifas().pegaValorFixa("011", "017")));
 	}
 
+	
 	@Test
 	public void calculaPlanoSemFaleMaisTest(){
 		double expected = 136.00;
@@ -35,7 +36,6 @@ public class CalculaTarifasTest {
 		double expected = 37.40;
 		double result = new CalculaTarifas().adicionalPercentual(34.00);
 		assertEquals(expected, result, 0.00001);
-		
 	}
 	
 	
